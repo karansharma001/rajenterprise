@@ -1,0 +1,70 @@
+<%- include("partials/header.ejs") %>
+    <%- include("partials/navbar.ejs") %>
+
+        <div class="product-cont">
+
+            <% for ( let i=0; i < productItems.length ; i++) { %>
+
+                <div class="product-item">
+
+                    <a href="/pd/<%= i %>">
+
+                        <div class="img-box">
+                            <img src="<%= productItems[i].productImg %>" alt="Can't display the image!">
+
+                        </div>
+                        <h2>
+                            <%= productItems[i].productName %>
+                        </h2>
+                        <p>
+                            <%= productItems[i].productDesc.slice(0, 200) %>...
+                        </p>
+
+
+                    </a>
+                </div>
+
+                <% } %>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <div class="footer">
+
+            <span>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                +91 (911) 9478653
+            </span>
+
+            <div class="f-mid">
+
+                <h3>Raj Enterprises</h3>
+
+            </div>
+
+
+            <div>
+                rajenterprises.al@gmail.com
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <script src="./scripts.js"></script>
+
+
+
+
+        <%- include("partials/footer.ejs") %>

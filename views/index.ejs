@@ -1,0 +1,100 @@
+<%- include("partials/header.ejs") %>
+    <%- include("partials/navbar.ejs") %>
+
+        <div id="home">
+
+            <div id="text-box">
+                <h2>Raj Enterprises
+                </h2>
+
+                <p>Welcome to Raj Enterprises! We are a leading import-export company based in the heart of Pune City
+                    with a global reach and a reputation for excellence. Founded in 2021 by a team of experienced
+                    international trade professionals, Raj Enterprises is dedicated to helping businesses of all sizes
+                    navigate the complex world of global commerce. Our mission is to provide our clients with reliable,
+                    cost-effective solutions that help them grow their businesses and succeed in today's competitive
+                    global marketplace.</p>
+
+                <a href="/products" class="btn">Checkout what we offer</a>
+            </div>
+
+        </div>
+
+        <div class="featured-pro">
+            <h1>Featured Products</h1>
+
+
+
+            <div class="product-cont">
+
+
+
+                <% for ( let i=3; i < 12 ; i++) { %>
+
+                    <div class="product-item">
+
+                        <a href="/pd/<%= i %>">
+
+                            <div class="img-box">
+                                <img src="<%= productItems[i].productImg %>" alt="Can't display the image!">
+
+                            </div>
+                            <h2>
+                                <%= productItems[i].productName %>
+                            </h2>
+                            <p>
+                                <%= productItems[i].productDesc.slice(0, 200) %>...
+                            </p>
+
+
+                        </a>
+                    </div>
+
+                    <% } %>
+
+            </div>
+
+            <a href="/products" class="btn">Checkout all products</a>
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="footer">
+
+            <span>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                +91 (911) 9478653
+            </span>
+
+            <div class="f-mid">
+
+                <h3>Raj Enterprises</h3>
+
+            </div>
+
+
+            <div>
+                rajenterprises.al@gmail.com
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src="./scripts.js"></script>
+
+
+
+
+        <%- include("partials/footer.ejs") %>

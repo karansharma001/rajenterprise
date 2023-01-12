@@ -1,0 +1,16 @@
+{
+  "name": "ammarlokhandwala",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "author": "Karan Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}
